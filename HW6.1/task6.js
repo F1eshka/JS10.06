@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const type = document.getElementById("type").value;
       const code = document.getElementById("code").value.trim();
   
-      // Очистка помилок
       errorName.textContent = "";
       errorCode.textContent = "";
   
@@ -89,7 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
       if (hasError) return;
   
-      // Якщо усе валідно — додаємо
       colors.push({ name, type, code });
       saveToCookie();
       renderPalette();
